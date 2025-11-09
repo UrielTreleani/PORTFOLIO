@@ -1,0 +1,15 @@
+.home-screen__container{
+    height: 100vh;
+    width: 100%;
+}
+
+.home-screen__sections-container{
+    padding: 0 60px;
+}
+
+.home-screen__personal-info{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    margin-top: 60px;
+}

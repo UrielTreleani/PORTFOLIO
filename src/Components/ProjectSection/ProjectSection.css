@@ -1,0 +1,16 @@
+.project-section__container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.project-section__title{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.project-section__project-card-container{
+    display: flex;
+    flex-direction: row;
+}

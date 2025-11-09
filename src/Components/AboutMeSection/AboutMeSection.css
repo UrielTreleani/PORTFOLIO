@@ -1,0 +1,15 @@
+.about-me-section__container{
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0;
+}
+
+.about-me-section__title{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about-me-section__description{
+    font-size: 20px;
+}
