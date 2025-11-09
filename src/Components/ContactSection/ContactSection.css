@@ -8,3 +8,24 @@
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+.contact-section__container div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+}
+
+.contact-section__contact-details{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.contact-section__contact-details a{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    text-decoration: none;
+    color: black;
+}
