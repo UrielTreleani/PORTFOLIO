@@ -1,0 +1,15 @@
+.section-projects__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 1223px;
+    color: white;
+}
+
+.section-projects__title{
+    width: 100%;
+    align-items: flex-start;
+    font-size: 60px;
+    font-family: "Syne", sans-serif;
+}

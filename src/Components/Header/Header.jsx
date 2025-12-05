@@ -1,27 +1,40 @@
-import React from 'react'
-import "./Header.css"
+import "./Header.css";
 
-function Header() {
+import React from "react";
+
+export default function Header() {
     return (
-    <div className='header__container'>
-        <div className='header__title'>
-            <span className='header__title-name'>
-                Uriel Treleani
-            </span>
-            <span className='header__subtitle'>
-                Frontend Developer
-            </span>
+        <div className="section-header">
+            <div className="header__container">
+                <div>
+                    <img src="./header-icon.png" alt="portfolio-icon" className="header__portfolio-icon" />
+                </div>
+                <div className="header__nav">
+                    <span>
+                        Inicio
+                    </span>
+                    <span>
+                        Proyectos
+                    </span>
+                    <span>
+                        Sobre Mi
+                    </span>
+                    <span>
+                        Contacto
+                    </span>
+                </div>
+                <div className="header__contact">
+                    <span>
+                        <i className="bi bi-linkedin"></i>
+                    </span>
+                    <span>
+                        <i className="bi bi-github"></i>
+                    </span>
+                    <span>
+                        <i className="bi bi-envelope"></i>
+                    </span>
+                </div>
+            </div>
         </div>
-        <div className='header__introduction'>
-            Mi nombre es Uriel, me dedico al desarrollo web Frontend.
-        </div>
-        <div>
-            <button className='header__button'>
-                Ver proyectos
-            </button>
-        </div>
-    </div>
-    )
+    );
 }
-
-export default Header

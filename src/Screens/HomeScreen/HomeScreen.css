@@ -1,15 +1,17 @@
 .home-screen__container{
-    height: 100vh;
+    background-color: #08233b;
+    height: 100%;
     width: 100%;
 }
 
-.home-screen__sections-container{
-    padding: 0 60px;
+.home-screen__section-about-me{
+    width: 100%;
+    height: 100%;
 }
 
-.home-screen__personal-info{
+.section-projects{
     display: flex;
-    flex-direction: row;
-    gap: 200px;
-    margin-top: 60px;
+    justify-content: center;
+    width: 100%;
+    padding: 110px 0 0 0;
 }
