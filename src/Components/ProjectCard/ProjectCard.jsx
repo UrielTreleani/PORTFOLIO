@@ -11,14 +11,18 @@ function ProjectCard() {
                     <div className='project-card__img-container'>
                         <img src={project.img} alt={project.name} />
                     </div>
-                    <div>
-                        <div>
-                            <h2>
+                    <div className='project-card__content'>
+                        <div className='project-card__header'>
+                            <h3 className='project-card__title'>
                                 {project.name}
-                            </h2>
-                            <span>
-                                <a href={project.link_project}>Ver app</a>
-                                <a href={project.link_code}>Ver codigo</a>
+                            </h3>
+                            <span className='project-card__links'>
+                                <a href={project.link_project} target='_blank'>
+                                    <i className="bi bi-box-arrow-up-right project-card__icon"></i>
+                                </a>
+                                <a href={project.link_code} target='_blank'>
+                                    <i className="bi bi-github project-card__icon"></i>
+                                </a>
                             </span>
                         </div>
                         <div>
@@ -27,9 +31,13 @@ function ProjectCard() {
                             </p>
                         </div>
                         <div>
-                            <span>
-                                {project.coding_language}
-                            </span>
+                            <div className='project-card__coding-language-container'>
+                                {project.coding_language.map((lang, id) => (
+                                    <span key={id} className='project-card__coding-language'>
+                                        {lang}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

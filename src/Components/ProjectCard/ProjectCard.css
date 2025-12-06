@@ -28,6 +28,53 @@
     height: 100%;
 }
 
+.project-card__content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.project-card__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-card__title{
+    font-size: 48px;
+}
+
+.project-card__links{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.project-card__icon{
+    font-size: 36px;
+    color: white;
+}
+
 .project-card__description{
     width: 634px;
+    color: #bbc2c8;
+    text-align: justify;
+}
+
+.project-card__coding-language-container{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+}
+
+.project-card__coding-language{
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: #2e4355;
+    padding: 6px 12px 6px 12px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px;
 }
