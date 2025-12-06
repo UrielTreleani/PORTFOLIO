@@ -1,7 +1,7 @@
 .project-card__container{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 40px;
 }
 
 .project-card{
@@ -10,11 +10,17 @@
     justify-content: center;
     height: 320px;
     gap: 40px;
+    border: 0 solid;
+    background-color: #183045;
+    border-radius: 20px;
+    padding: 24px;
 }
 
 .project-card__img-container{
     width: 501px;
     height: 272px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .project-card__img-container img{
