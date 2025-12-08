@@ -4,14 +4,25 @@
     width: 100%;
 }
 
-.home-screen__section-about-me{
+.home-screen__section-home{
     width: 100%;
     height: 100%;
 }
 
-.section-projects{
+.home-screen__section-projects{
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 110px 0 0 0;
+}
+
+.home-screen__section-about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 0 0px 0;
+}
+
+.home-screen__section-contact{
+    padding: 110px 0 50px 0;
 }

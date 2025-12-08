@@ -1,7 +1,7 @@
-import "./SectionAboutMe.css";
+import "./Home.css";
 import React from "react";
 
-function SectionAboutMe() {
+function Home() {
     return (
         <div className="section-about-me">
             <div className="section-about-me__container">
@@ -18,7 +18,7 @@ function SectionAboutMe() {
                         </span>
                     </div>
                     <span className="span-font-size">
-                        Me dedico al desarrollo web frontend
+                        Desarrollador Web Frontend en formación
                     </span>
                 </div>
                 <div>
@@ -31,4 +31,4 @@ function SectionAboutMe() {
     );
 }
 
-export default SectionAboutMe;
+export default Home;
