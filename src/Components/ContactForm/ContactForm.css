@@ -1,0 +1,47 @@
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-form__user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-form__subtitles{
+    font-size: 40px;
+    color: #a9c1da;
+}
+
+.contact-form__user-input{
+    height: 40px;
+    width: 600px;
+    font-size: 20px;
+}
+
+.contact-form__message-container{
+    width: 100%;
+}
+
+.contact-form__message{
+    height: 80px;
+    width: 100%;
+    font-size: 25px;
+}
+
+.contact-form__button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-form__button{
+    height: 50px;
+    width: 400px;
+    font-size: 20px;
+}

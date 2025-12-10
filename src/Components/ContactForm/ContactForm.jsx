@@ -6,53 +6,64 @@ function ContactForm() {
     const form = useRef()
     const [sending, setSending] = useState("")
 
-    const sendEmail = (e) =>{
+    const sendEmail = async (e) =>{
 
         e.preventDefault()
-        setSending("enviando")
+        setSending("Enviando")
 
-        emailjs.sendForm(
-            "service_ct8l01c",
-            "template_qb6x96m",
-            form.current,
-            "HGkXaargYAzqKAbo-"
-        ).then(
-            () => {
-                setSending("enviado");
-                form.current.reset()
-            },  
-            () => {
-                setSending("error")
-            }
-        )
+        const formData = new FormData(form.current)
+
+        formData.append("access_key", "7949a901-3ee8-46ef-b395-c80636f0a82d")
+        formData.append("subject", "Nuevo mensaje desde tu portfolio")
+
+        const response = await fetch("https://api.web3forms.com/submit", {method: "POST", body: formData})
+
+        if(response.ok){
+            setSending("Enviado")
+            form.current.reset()
+        }
+        else{
+            setSending("Error")
+        }
     }
+
 
   return (
     <div>
         <form ref={form} onSubmit={sendEmail} className='contact-form'>
-            <label>
-                Nombre:
-            </label>
-            <input type="text" name='name' required/>
-            <label>
-                Correo:
-            </label>
-            <input type="email" name="email" required/>
-            <label>
-                Mensaje:
-            </label>
-            <textarea name="message" required></textarea>
-            <button type='submit' disabled={sending === "enviando"}>
-                {sending === "enviando" ? "enviando" : "enviar"}
-            </button>
+            <div className='contact-form__user'>
+                <div>
+                    <label className='contact-form__subtitles'>
+                        Nombre:
+                    </label>
+                    <input type="text" name='name' required className='contact-form__user-input'/>                   
+                </div>
+                <div>
+                    <label className='contact-form__subtitles'>
+                        Correo:
+                    </label>
+                    <input type="email" name="email" required className='contact-form__user-input'/>
+                </div>
+            </div>
+            <div className='contact-form__message-container'>
+                <label className='contact-form__subtitles'>
+                    Mensaje:
+                </label>
+                <textarea name="message" required className='contact-form__message'></textarea>
+            </div>
+            <div className='contact-form__button-container'>
+                <button type='submit' disabled={sending === "enviando"} className='contact-form__button'>
+                    {sending === "Enviando" ? "Enviando" : "Enviar"}
+                </button>
+            </div>
 
-            {sending === "enviado" &&
+            {sending === "Enviado" &&
             <p>
                 Mensaje enviado correctamente
             </p>
             }
 
-            {sending === "error" &&
+            {sending === "Error" &&
             <p>
                 Error al enviar el mensaje
             </p>

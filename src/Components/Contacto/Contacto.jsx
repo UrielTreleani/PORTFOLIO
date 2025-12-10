@@ -4,14 +4,14 @@ import ContactForm from '../ContactForm/ContactForm'
 
 function Contacto() {
   return (
-    <div>
-      <h2>
+    <div className='section-contact__container'>
+      <h2 className='section-contact__title'>
         CONTACTO
       </h2>
       <div>
         <ContactForm/>
       </div>
-    </div>
+    </div>  
   )
 }
 

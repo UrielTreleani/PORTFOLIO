@@ -1,0 +1,13 @@
+.section-contact__container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 1223px;
+}
+
+.section-contact__title{
+    font-size: 60px;
+    font-family: "Syne", sans-serif;
+    color: white;
+    align-items: flex-start;
+}

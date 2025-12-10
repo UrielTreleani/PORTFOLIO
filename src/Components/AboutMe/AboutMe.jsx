@@ -15,7 +15,7 @@ function AboutMe() {
                 Me considero una persona responsable, curiosa y orientada al aprendizaje continuo. Disfruto investigar nuevas propiedades, herramientas y formas más eficientes de resolver problemas. También valoro el feedback y los entornos donde puedo mejorar profesionalmente a través de la práctica y la colaboración.
             </p>
             <p>
-                Actualmente busco mi primera oportunidad laboral en el área, con el objetivo de seguir creciendo como desarrollador y aportar con dedicación, actitud profesional y ganas de aprender.
+                Actualmente me encuentro realizando una Tecnicatura en Tecnología Web, y busco mi primera oportunidad laboral en el área, con el objetivo de seguir creciendo como desarrollador y aportar con dedicación, actitud profesional y ganas de aprender.
             </p>
         </div>
     </div>
