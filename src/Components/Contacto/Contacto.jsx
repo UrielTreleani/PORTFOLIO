@@ -8,7 +8,7 @@ function Contacto() {
       <h2 className='section-contact__title'>
         CONTACTO
       </h2>
-      <div>
+      <div className='section-conctact__form-container'>
         <ContactForm/>
       </div>
     </div>  

@@ -32,38 +32,38 @@ function ContactForm() {
     <div>
         <form ref={form} onSubmit={sendEmail} className='contact-form'>
             <div className='contact-form__user'>
-                <div>
+                <div className='contact-form__form'>
                     <label className='contact-form__subtitles'>
-                        Nombre:
+                        NOMBRE
                     </label>
                     <input type="text" name='name' required className='contact-form__user-input'/>                   
                 </div>
-                <div>
+                <div className='contact-form__form'>
                     <label className='contact-form__subtitles'>
-                        Correo:
+                        CORREO
                     </label>
                     <input type="email" name="email" required className='contact-form__user-input'/>
                 </div>
-            </div>
-            <div className='contact-form__message-container'>
-                <label className='contact-form__subtitles'>
-                    Mensaje:
-                </label>
-                <textarea name="message" required className='contact-form__message'></textarea>
+                <div className='contact-form__form'>
+                    <label className='contact-form__subtitles'>
+                        MENSAJE
+                    </label>
+                    <textarea name="message" required className='contact-form__user-input  message'></textarea>
+                </div>
             </div>
             <div className='contact-form__button-container'>
-                <button type='submit' disabled={sending === "enviando"} className='contact-form__button'>
-                    {sending === "Enviando" ? "Enviando" : "Enviar"}
+                <button type='submit' disabled={sending === "ENVIANDO"} className='contact-form__button'>
+                    {sending === "ENVIANDO" ? "ENVIANDO" : "ENVIAR MENSAJE"}
                 </button>
             </div>
 
-            {sending === "Enviado" &&
+            {sending === "ENVIADO" &&
             <p>
                 Mensaje enviado correctamente
             </p>
             }
 
-            {sending === "Error" &&
+            {sending === "ERROR" &&
             <p>
                 Error al enviar el mensaje
             </p>
