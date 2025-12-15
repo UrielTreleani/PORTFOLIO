@@ -11,16 +11,16 @@ export default function Header() {
                 </div>
                 <div className="header__nav">
                     <span>
-                        Inicio
+                        <a href="#home" className="header__nav-links">Inicio</a>
                     </span>
                     <span>
-                        Proyectos
+                        <a href="#project" className="header__nav-links">Proyectos</a>
                     </span>
                     <span>
-                        Sobre Mi
+                        <a href="#about-me" className="header__nav-links">Sobre mí</a>
                     </span>
                     <span>
-                        Contacto
+                        <a href="#contact" className="header__nav-links">Contacto</a>
                     </span>
                 </div>
                 <div className="header__contact">
