@@ -1,8 +1,12 @@
 import "./Header.css";
+import useScrollSpy from "../useScrollSpy/useScrollSpy";
 
-import React from "react";
 
 export default function Header() {
+
+    const sections = ["#Inicio", "#Proyectos", "#Sobre-mí", "#Contacto"]
+    const activeSection = useScrollSpy(sections, { rootMargin: "-50% 0px -50% 0px" })
+
     return (
         <div className="section-header">
             <div className="header__container">
@@ -10,18 +14,18 @@ export default function Header() {
                     <img src="./header-icon.png" alt="portfolio-icon" className="header__portfolio-icon" />
                 </div>
                 <div className="header__nav">
-                    <span>
-                        <a href="#home" className="header__nav-links">Inicio</a>
-                    </span>
-                    <span>
-                        <a href="#project" className="header__nav-links">Proyectos</a>
-                    </span>
-                    <span>
-                        <a href="#about-me" className="header__nav-links">Sobre mí</a>
-                    </span>
-                    <span>
-                        <a href="#contact" className="header__nav-links">Contacto</a>
-                    </span>
+                    {sections.map((sec) => {
+                        const name = sec.replace("#", "");
+                        return (
+                            <a
+                                key={sec}
+                                href={sec}
+                                className={activeSection === name ? "active" : ""}
+                            >
+                                {name.charAt(0).toUpperCase() + name.slice(1)}
+                            </a>
+                        );
+                    })}
                 </div>
                 <div className="header__contact">
                     <span>

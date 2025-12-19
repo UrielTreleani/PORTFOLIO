@@ -42,3 +42,16 @@
     gap: 15px;
     font-size: 17px;
 }
+
+.header__nav a {
+    color: #aaa;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 16px;
+}
+.header__nav a.active {
+    color: #ff5e5e;
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 2px solid #ff5e5e;
+}

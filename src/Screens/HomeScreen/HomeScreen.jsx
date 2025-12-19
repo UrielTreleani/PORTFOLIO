@@ -12,16 +12,16 @@ function HomeScreen() {
             <div>
                 <Header/>
             </div>
-            <div className="home-screen__section-home" id="home">
+            <div className="home-screen__section-home" id="Inicio">
                 <Home/>
             </div>
-            <div className="home-screen__section-projects" id="project">
+            <div className="home-screen__section-projects" id="Proyectos">
                 <SectionProjects/>
             </div>
-            <div className="home-screen__section-about-me" id="about-me">
+            <div className="home-screen__section-about-me" id="Sobre-mí">
                 <AboutMe/>
             </div>
-            <div className="home-screen__section-contact" id="contact">
+            <div className="home-screen__section-contact" id="Contacto">
                 <Contacto/>
             </div>
         </div>
