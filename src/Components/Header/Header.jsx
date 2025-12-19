@@ -22,21 +22,18 @@ export default function Header() {
                                 href={sec}
                                 className={activeSection === name ? "active" : ""}
                             >
-                                {name.charAt(0).toUpperCase() + name.slice(1)}
+                                {name.replace(/-/g, " ")}
                             </a>
                         );
-                    })}
+                    })} 
                 </div>
                 <div className="header__contact">
-                    <span>
+                    <a href="https://www.linkedin.com/in/urieltreleani" target="_blank">
                         <i className="bi bi-linkedin"></i>
-                    </span>
-                    <span>
+                    </a>
+                    <a href="https://github.com/UrielTreleani?tab=repositories" target="_blank">
                         <i className="bi bi-github"></i>
-                    </span>
-                    <span>
-                        <i className="bi bi-envelope"></i>
-                    </span>
+                    </a>
                 </div>
             </div>
         </div>

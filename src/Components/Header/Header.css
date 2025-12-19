@@ -43,6 +43,11 @@
     font-size: 17px;
 }
 
+.header__contact a{
+    text-decoration: none;
+    color: white;
+}
+
 .header__nav a {
     color: #aaa;
     transition: 0.3s;
