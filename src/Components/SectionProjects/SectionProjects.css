@@ -14,3 +14,26 @@
     font-family: "Syne", sans-serif;
 }
 
+
+@media screen and (max-width: 1326px){
+
+    .section-projects__container{
+        width: 900px;
+    }
+    
+    .section-projects__title{
+        font-size: 48px;
+    }
+}
+
+
+@media screen and (max-width: 980px){
+
+    .section-projects__container{
+        width: 600px;
+    }
+
+    .section-projects__title{
+        font-size: 36px;
+    }
+}

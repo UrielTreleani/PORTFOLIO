@@ -1,6 +1,5 @@
-import React from "react";
 import "./HomeScreen.css";
-import Header from "../../Components/Header/Header";
+import Navbar from "../../Components/Navbar/Navbar";
 import Home from "../../Components/Home/Home";
 import SectionProjects from "../../Components/SectionProjects/SectionProjects";
 import AboutMe from "../../Components/AboutMe/AboutMe";
@@ -9,8 +8,8 @@ import Contacto from "../../Components/Contacto/Contacto";
 function HomeScreen() {
     return (
         <div className="home-screen__container">
-            <div>
-                <Header/>
+            <div className="home-screen__navbar">
+                <Navbar/>
             </div>
             <div className="home-screen__section-home" id="Inicio">
                 <Home/>

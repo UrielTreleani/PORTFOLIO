@@ -8,7 +8,7 @@ function SectionProjects() {
         <h2 className='section-projects__title'>
             PROYECTOS
         </h2>
-        <div>
+        <div className='section-projects__project-cards'>
             <ProjectCard/>
         </div>
     </div>

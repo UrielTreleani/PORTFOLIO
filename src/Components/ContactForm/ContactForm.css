@@ -56,3 +56,39 @@
     border-radius: 8px;
     background-color: #0a203b;
 }
+
+
+@media screen and (max-width: 1326px){
+
+    .contact-form__user-input{
+        font-size: 16px;
+    }
+    
+    .contact-form__button{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 980px){
+
+    .contact-form__user-input{
+        font-size: 12px;
+    }
+
+    .contact-form__subtitles{
+        font-size: 16px;
+    }
+    
+    .contact-form__user-input{
+        height: 30px;
+        padding: 6px 8px;
+    }
+
+    .contact-form__button{
+        font-size: 14px;
+    }
+
+    .message{
+        height: 100px;
+    }
+}

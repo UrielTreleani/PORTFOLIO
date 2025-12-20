@@ -22,3 +22,34 @@
     text-align: justify;
     font-size: 20px;
 }
+
+
+@media screen and (max-width: 1326px){
+
+    .about-me__container{
+        width: 900px;
+    }
+
+    .about-me__title{
+        font-size: 48px;
+    }
+
+    .about-me__description p{
+    font-size: 16px;
+    } 
+}
+
+@media screen and (max-width: 980px){
+
+    .about-me__container{
+        width: 600px;
+    }
+
+    .about-me__title{
+        font-size: 36px;
+    }
+
+    .about-me__description p{
+    font-size: 12px;
+    } 
+}

@@ -17,3 +17,26 @@
     border-radius: 8px;
     padding: 40px;
 }
+
+
+@media screen and (max-width: 1326px){
+
+    .section-contact__container{
+        width: 900px;
+    }
+
+    .section-contact__title{
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 980px){
+
+    .section-contact__container{
+        width: 600px;
+    }
+
+    .section-contact__title{
+        font-size: 36px;
+    }
+}
