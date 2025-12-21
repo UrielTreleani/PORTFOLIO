@@ -9,7 +9,7 @@ function Home() {
                     <span className="span-font-size">
                         Hola!!
                     </span>
-                    <div className="section"> 
+                    <div> 
                         <span>
                         Soy 
                         </span>

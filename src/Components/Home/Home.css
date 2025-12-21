@@ -101,6 +101,9 @@
         width: 300px;
     }
 
+    .section-home__presentation{
+        padding: 0 25px;
+    }
 
     .section-home__avatar{
         width: 200px;
@@ -111,10 +114,6 @@
 @media screen and (max-width: 380px){
     .section-home__container{
         width: 260px;
-    }
-
-    .section-home__presentation{
-        padding: 0 0 0 20px;
     }
 
     .section-home__presentation div{
