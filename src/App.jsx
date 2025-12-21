@@ -1,13 +1,27 @@
+import { useContext } from 'react'
+import MobileMenu from './Components/MobileMenu/MobileMenu'
 import HomeScreen from './Screens/HomeScreen/HomeScreen'
 import './Styles/global.css'
+import { MenuMobileContext } from './Contexts/MobileMenuContext/MobileMenuContext'
 
 
 function App() {
 
+  const {isOpen} = useContext(MenuMobileContext)
 
   return (
     <div>
-      <HomeScreen/>
+      <div className="app__mobile-menu">
+        {
+          isOpen === true ?
+            <div>
+              <MobileMenu />
+            </div>
+            :
+            ""
+        }
+      </div>
+      <HomeScreen />
     </div>
   )
 }

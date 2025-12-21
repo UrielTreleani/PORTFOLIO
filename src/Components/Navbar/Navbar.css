@@ -47,7 +47,7 @@
     font-size: 16px;
 }
 
-.navbar__nav a.active {
+.navbar__nav a.active{
     color: #ff5e5e;
     font-weight: 700;
     font-size: 20px;
@@ -70,6 +70,10 @@
     color: white;
 }
 
+.navbar__menu-button{
+    display: none;
+}
+
 
 
 
@@ -77,6 +81,14 @@
 
     .navbar__conteiner{
         width: 900px;
+    }
+
+    .navbar__nav a {
+        font-size: 14px;
+    }
+
+    .navbar__nav a.active{
+        font-size: 18px;
     }
 }
 
@@ -87,7 +99,35 @@
         width: 600px;
     }
 
+        .navbar__nav a {
+        font-size: 12px;
+    }
+
+    .navbar__nav a.active{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 680px){
+
     .navbar__content{
         display: none;
+    }
+
+    .navbar__button-container{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        padding: 0 20px 0;
+    }
+
+    .navbar__menu-button{
+        display: flex;
+        background-color: transparent;
+        border: none;
+        font-size: 25px;
+        color: black;
+        cursor: pointer;
     }
 }

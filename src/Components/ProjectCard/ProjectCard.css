@@ -21,7 +21,7 @@
 }
 
 .project-card__img-container{
-    max-width: 501px;
+    max-width: 100%;
     max-height: 100%;
     border-radius: 8px;
     overflow: hidden;
@@ -108,10 +108,19 @@
     }
 
     .project-card__description{
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .project-card__coding-language{
         font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 980px){
+    .project-card{
+        flex-direction: column-reverse;
+        height: 100%;
+        align-items: center;
     }
 }
