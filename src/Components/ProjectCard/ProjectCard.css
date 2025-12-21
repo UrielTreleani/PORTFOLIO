@@ -124,3 +124,35 @@
         align-items: center;
     }
 }
+
+@media screen and (max-width: 680px){
+
+    .section-projects__project-cards{
+        max-width: 280px;
+    }
+
+    .project-card__content{
+        max-width: 280px;
+    }
+
+    .project-card__title{
+        font-size: 24px;
+    }
+
+    .project-card__icon{
+        font-size: 20px;
+    }
+
+    .project-card__description{
+        font-size: 12px;
+    }
+
+    .project-card__coding-language-container{
+        max-width: 280px;
+    }
+
+    .project-card__coding-language{
+        font-size: 8px;
+        padding: 3px 6px;
+    }
+}

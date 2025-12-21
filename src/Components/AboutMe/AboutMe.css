@@ -53,3 +53,18 @@
     font-size: 14px;
     } 
 }
+
+@media screen and (max-width: 680px){
+
+    .about-me__container{
+        width: 260px;
+    }
+
+    .about-me__title{
+        font-size: 24px;
+    }
+
+    .about-me__description p{
+    font-size: 12px;
+    }
+}

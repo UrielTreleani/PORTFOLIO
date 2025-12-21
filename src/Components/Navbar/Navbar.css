@@ -111,6 +111,10 @@
 
 @media screen and (max-width: 680px){
 
+    .navbar__conteiner{
+        width: 280px;
+    }
+
     .navbar__content{
         display: none;
     }
@@ -127,7 +131,7 @@
         background-color: transparent;
         border: none;
         font-size: 25px;
-        color: black;
+        color: #929da8;
         cursor: pointer;
     }
 }

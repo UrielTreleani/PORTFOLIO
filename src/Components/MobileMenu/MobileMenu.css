@@ -19,6 +19,7 @@
 .mobile-menu__icon{
     width: 100px;
     height: 100px;
+    color: white;
 }
 
 .mobile-menu__button{
@@ -28,15 +29,17 @@
     background-color: transparent;
     border: none;
     font-size: 30px;
+    color: white;
 }
 
 .mobile-menu__nav{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 40px;
     height: 100%;
+    margin: 20px 0 0;
 }
 
 .mobile-menu__nav a{
@@ -59,6 +62,6 @@
 
 .mobile-menu__link{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 40px;
 }

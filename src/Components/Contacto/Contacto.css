@@ -40,3 +40,17 @@
         font-size: 36px;
     }
 }
+
+@media screen and (max-width: 680px){
+    .section-contact__container{
+        width: 280px;
+    }
+
+    .section-contact__title{
+        font-size: 24px;
+    }
+
+    .section-conctact__form-container{
+        padding: 20px;
+    }
+}
