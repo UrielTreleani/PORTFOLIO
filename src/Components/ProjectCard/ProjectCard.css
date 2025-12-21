@@ -125,15 +125,7 @@
     }
 }
 
-@media screen and (max-width: 680px){
-
-    .section-projects__project-cards{
-        max-width: 280px;
-    }
-
-    .project-card__content{
-        max-width: 280px;
-    }
+@media screen and (max-width: 680px){   
 
     .project-card__title{
         font-size: 24px;
@@ -148,7 +140,7 @@
     }
 
     .project-card__coding-language-container{
-        max-width: 280px;
+        max-width: 300px;
     }
 
     .project-card__coding-language{

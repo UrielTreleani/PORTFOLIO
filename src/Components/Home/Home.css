@@ -93,12 +93,23 @@
     }
 }
 
-
 @media screen and (max-width: 680px){
     .section-home__container{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 300px;
+    }
+
+
+    .section-home__avatar{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .section-home__container{
         width: 300px;
     }
 
