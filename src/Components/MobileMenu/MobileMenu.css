@@ -35,7 +35,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
     height: 100%;
 }
 
@@ -53,10 +53,12 @@
     gap: 40px;
 }
 
+.mobile-menu__links-container a{
+    border: none;
+}
+
 .mobile-menu__link{
-    position: relative;
     text-decoration: none;
     color: black;
     font-size: 40px;
-    bottom: 20px;
 }
