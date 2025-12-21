@@ -54,3 +54,9 @@
         padding: 20px;
     }
 }
+
+@media screen and (max-width: 380px){
+    .section-contact__container{
+        width: 260px;
+    }
+}

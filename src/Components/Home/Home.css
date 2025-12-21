@@ -110,11 +110,15 @@
 
 @media screen and (max-width: 380px){
     .section-home__container{
-        width: 300px;
+        width: 260px;
     }
 
     .section-home__presentation{
         padding: 0 0 0 20px;
+    }
+
+    .section-home__presentation div{
+    font-size: 26px;
     }
 
     .section-home__avatar{

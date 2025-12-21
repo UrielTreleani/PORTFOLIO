@@ -135,3 +135,9 @@
         cursor: pointer;
     }
 }
+
+@media screen and (max-width: 380px){
+    .navbar__conteiner{
+        width: 260px;
+    }
+}

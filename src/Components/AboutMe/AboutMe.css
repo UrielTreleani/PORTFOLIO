@@ -68,3 +68,9 @@
     font-size: 12px;
     }
 }
+
+@media screen and (max-width: 380px){
+    .about-me__container{
+        width: 260px;
+    }
+}
