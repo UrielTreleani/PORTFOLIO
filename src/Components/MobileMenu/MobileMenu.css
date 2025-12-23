@@ -6,6 +6,16 @@
     width: 100vw;
     background-color: #08233b;
     z-index: 2;
+    transform: translateX(-100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-open {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .mobile-menu__header{

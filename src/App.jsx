@@ -12,14 +12,7 @@ function App() {
   return (
     <div>
       <div className="app__mobile-menu">
-        {
-          isOpen === true ?
-            <div>
-              <MobileMenu />
-            </div>
-            :
-            ""
-        }
+      <MobileMenu />
       </div>
       <HomeScreen />
     </div>

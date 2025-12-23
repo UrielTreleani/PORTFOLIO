@@ -106,8 +106,8 @@
     }
 
     .section-home__avatar{
-        width: 200px;
-        height: 200px;
+        width: 240px;
+        height: 240px;
     }
 }
 
@@ -117,11 +117,11 @@
     }
 
     .section-home__presentation div{
-    font-size: 26px;
+    font-size: 24px;
     }
 
     .section-home__avatar{
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
     }
 }
